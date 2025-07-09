@@ -7,8 +7,8 @@ const Navbar = () =>{
             <div className="flex gap-2 items-center">
                 <input 
                     type="text"
-                    placeholder="Search products..."
-                    className="py-1.5 px-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"/>
+                    placeholder="Search products"
+                    className="py-1.5 px-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 text-white"/>
                 <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-1.5 rounded-md transition">Search</button>
             </div>
             <div className="flex gap-4 text-white font-medium">
