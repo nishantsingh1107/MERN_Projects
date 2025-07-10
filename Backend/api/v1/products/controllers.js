@@ -114,6 +114,11 @@ const deleteProductController = async (req, res) => {
             message: "Internal Server Error",
             data: {},
         });
+        if (err.name === "ValidationError" || err.code == "11000") {
+            res.status(400).json({ isSuccess: false, message: `Err: ${err.message}`, data: {} });
+        } else {
+            res.status(500).json({ isSuccess: false, message: "Internal Server Error", data: {} });
+        }
     }
 };
 
