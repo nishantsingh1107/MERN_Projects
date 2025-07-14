@@ -5,7 +5,7 @@ const Navbar = () =>{
     const {count} = useMyContext();
     return (
         <div className="py-4 px-6 flex justify-between items-center bg-[#131921] shadow-md">
-            <div className="text-2xl font-semibold text-white tracking-wide">Shopping App</div>
+            <div className="text-2xl font-semibold text-white tracking-wide">🛒Shopping App</div>
             <div className="flex gap-2 items-center">
                 <input 
                     type="text"
@@ -16,6 +16,7 @@ const Navbar = () =>{
             <div className="flex gap-4 text-white font-medium">
                 <Link to='/profile' className="hover:underline">Profile</Link>
                 <Link to='/signup' className="hover:underline">Signup</Link>
+                <Link to='/login' className="hover:underline">Login</Link>
                 <p>value : {count}</p>
             </div>
         </div>
