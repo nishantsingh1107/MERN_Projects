@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { Navbar } from "../Components/Navbar"; 
+import { Navbar } from "../components/Navbar"; 
 
 
 const LoginPage =() =>{
