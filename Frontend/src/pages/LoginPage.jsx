@@ -1,9 +1,9 @@
-import { Link , useNavigate} from "react-router";
-import {Navbar} from "../Components/Navbar"; 
+import { Link } from "react-router";
+import { Navbar } from "../Components/Navbar"; 
 
 
 const LoginPage =() =>{
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     
     const handleLogin = async (e) => {
     e.preventDefault();
@@ -29,7 +29,7 @@ const LoginPage =() =>{
 
       if (resp.status === 200) {
         alert("Login Successful");
-        navigate("/");
+        window.open("/", "_self");
       } else {
         alert("Login Error: " + (result.message || "Unknown error"));
       }
