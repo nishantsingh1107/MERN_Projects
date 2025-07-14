@@ -1,4 +1,4 @@
-import { Navbar } from "../components/Navbar";
+import { Navbar } from "../components/Navbar.jsx";
 import { Link, useNavigate } from "react-router";
 import React from "react";  
 
