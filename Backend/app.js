@@ -10,8 +10,13 @@ const { apiRouter } = require("./api/v1/routes.js");
 
 const app = express();
 
+const allowedOrigins = [
+    process.env.CLIENT_URL,
+    process.env.CLIENT_URL_LOCAL,
+];
+
 app.use(cors({
-    origin: "https://mernprojectshoppingapp.vercel.app/",
+    origin: allowedOrigins,
     credentials: true,
 }));
 app.use(express.json());
